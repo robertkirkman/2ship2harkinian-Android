@@ -40,6 +40,7 @@ class OTRGlobals {
     std::shared_ptr<std::vector<std::string>> ListFiles(std::string path);
 
   private:
+    ImFont* CreateDefaultFontWithSize(float size);
     ImFont* CreateFontWithSize(float size, std::string fontPath = "");
     void CheckSaveFile(size_t sramSize) const;
 };
